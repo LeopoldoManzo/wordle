@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color:black;
+    background-size: contain;
+    display:flexbox;
+    justify-content: center;
+}
+
+hr {
+    width: 500px;
+}
+
+#title {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:rgb(90, 125, 220);
+}
+
+#board {
+    width: 350px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    /* Box */
+    border: 2px solid lightgray;
+    width: 60px;
+    height: 60px;
+    margin: 2.5px;
+
+    /* Text */
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct {
+    background-color: rgb(238, 109, 131);
+    color: white;
+    border-color: white;
+}
+
+.present {
+    background-color: rgb(115, 174, 247);
+    color: white;
+    border-color: white;
+}
+
+.absent {
+    background-color: #787C7E;
+    color: white;
+    border-color:white;
+}
+
+.box1{
+    
+    border: 15px solid rgb(238, 109, 131);
+    padding: 10px;
+    margin: 20px;
+    color:white;
+    font-weight:bold;
+    margin-left:700px;
+    margin-right:700px;
+    
+  }
+
+  .box2{
+    
+    border: 15px solid rgb(115, 174, 247);
+    padding: 10px;
+    margin: 20px;
+    color:white;
+    font-weight:bold;
+    margin-left:700px;
+    margin-right:700px;
+    
+  }
+  .box3{
+    
+    border: 15px solid #787C7E;
+    padding: 10px;
+    margin: 20px;
+    color:white;
+    font-weight:bold;
+    margin-left:700px;
+    margin-right:700px;
+    
+  }
+
+
+
+
+#gradient{
+    background:linear-gradient(132deg, #f46bc8cb, #589be7);
+    background-size:400% 400%;
+    animation: BackgroundGradient 10s ease infinite;
+    scroll-behavior: smooth;
+}
+
+@keyframes BackgroundGradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
